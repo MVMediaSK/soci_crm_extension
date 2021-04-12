@@ -1,0 +1,91 @@
+.soci_crm_contact_card {
+  padding: 0.5rem 1.5rem !important;
+}
+
+.soci_crm_contact_card .container {
+  max-width: 100% !important;
+}
+.soci_crm_contact_card .soci_profile_img {
+  border-radius: 50px;
+}
+
+.soci_crm_contact_card .title,
+.subtitle,
+.soci_card-header-title {
+  color: #9f50dd;
+}
+
+.soci_crm_contact_card .card-header-icon {
+  border: #9f50dd;
+  background-color: #a050dd9c;
+  color: #ffffff;
+}
+
+.soci_crm_contact_card .card-header-icon:hover,
+.soci_crm_contact_card .soci_contact_card_drop_down_menu button:hover {
+  border: #a050dd9c;
+  background-color: #9f50dd;
+  color: #ffffff;
+}
+
+.soci_crm_contact_card .soci_contact_card_drop_down_menu button {
+  height: 100%;
+  background-color: #a050dd9c;
+  border-radius: 0;
+  border-right: 1px solid #ffffff;
+}
+
+.soci_crm_contact_card a {
+  color: #9f50dd;
+}
+
+.soci_crm_contact_card .soci_crm_card_content {
+  display: none;
+}
+
+.soci_crm_contact_card .soci_crm_foot_link:hover {
+  background-color: #a050dd9c;
+  color: #ffffff;
+}
+
+.soci_crm_contact_card .soci_crm_foot_link:hover {
+  background-color: #a050dd9c;
+  color: #ffffff;
+}
+
+.soci_crm_contact_card .soci_crm_foot_link .fa:hover {
+  background-color: #a050dd9c;
+  color: #ffffff;
+}
+
+.soci_crm_contact_card .card-header .soci_profile_img {
+  margin: 5px;
+  border: 2px solid #a050dd9c;
+}
+
+.soci_crm_contact_card .active_card {
+  display: block !important;
+}
+
+.soci_crm_contact_card .dropdown_menu {
+  right: 0 !important;
+  left: auto !important;
+}
+
+.soci_card_btn {
+  font-size: 11px;
+}
+
+.soci_card_btn:hover {
+  color: #ffffff;
+  background-color: #a050dd9c;
+}
+
+.soci_contact_container_2 .soci-tabs-content li {
+  display: none;
+  list-style: none;
+}
+
+.soci_contact_container_2 .soci-tabs-content li.is-active {
+  display: block;
+}

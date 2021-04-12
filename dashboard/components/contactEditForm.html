@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html class="main_docs_con">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SociCRM Edit Contact</title>
+  <link rel="stylesheet" href="chrome-extension://dajhlgeppahilcjfammljcfneapcfckn/bulma/css/bulma.min.css">
+  <link rel="stylesheet"
+    href="chrome-extension://dajhlgeppahilcjfammljcfneapcfckn/libraries/font-awesome/css/fa-all.css" />
+  <link rel="stylesheet"
+    href="chrome-extension://dajhlgeppahilcjfammljcfneapcfckn/bulma-extensions/dist/css/bulma-extensions.min.css" />
+  <link rel="stylesheet" href="chrome-extension://dajhlgeppahilcjfammljcfneapcfckn/dashboard/css/contactEditForm.css" />
+
+</head>
+
+<body>
+  <section class="section soci_contact_section">
+    <!-- Profile Basic Info -->
+    <div class="columns is-mobile">
+      <div class="column is-right">
+        <div class="">
+          <figure class="image is-128x128">
+            <img class="soci_profile_img" src="https://bulma.io/images/placeholders/128x128.png" alt="User_Profile_Pic">
+          </figure>
+          <!-- Profile Image Thumb -->
+        </div>
+      </div>
+      <div class="column is-left">
+        <p class="card-header-title soci_card-header-title soci_name">
+          {{User's Name}}
+        </p>
+        <div class="row">
+          <a href="{{zoom_link}}" class="soci_card_btn soci_card_btn_zoom button is-link is-rounded is-small"><i
+              class="fas fa-video"></i>
+            &nbsp; Zoom
+          </a>
+          <a href="{{email_link}}" class="soci_card_btn soci_card_btn_email button is-rounded is-small"><i
+              class="fas fa-envelope-open"></i> &nbsp;
+            Email </a>
+        </div>
+      </div>
+    </div>
+    <!-- Profile Basic Info Ends -->
+    <!-- Profile Tab Start -->
+    <div class="tab_wrapper">
+      <div class="tabs-wrapper">
+        <div class="tabs is-centered is-fullwidth">
+          <ul>
+            <li class="is-active">
+              <a>Info</a>
+            </li>
+            <li>
+              <a>Notes</a>
+            </li>
+            <li>
+              <a>Funnels</a>
+            </li>
+            <li>
+              <a>History</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="tabs-content">
+          <ul>
+            <!-- List1 -->
+            <li class="is-active">
+              <section class="soci_profile_info">
+                <div class="columns soci_label_col is-mobile">
+                  <div class="column soci_inner_label_col">
+                    <p>Name</p>
+                    <p>Email</p>
+                    <p>Birth Date</p>
+                    <p>Profile Pic</p>
+                  </div>
+                  <div class="column soci_sec_inner_label_col">
+                    <!-- Col1 -->
+                    <div class="soci_inner_col">
+                      <input class="input is-normal soci_user_fullName" type="text" placeholder="Name">
+                    </div>
+                    <!-- Col1 Ends -->
+                    <!-- Col2 -->
+                    <div class="soci_inner_col">
+                      <input class="input is-normal soci_email_id" type="email" placeholder="example@example.com">
+                    </div>
+                    <!-- Col2 Ends -->
+                    <!-- Col3 -->
+                    <div class="soci_inner_col">
+                      <input class="input is-normal soci_user_birthDay" type="date">
+                    </div>
+                    <!-- Col3 Ends -->
+                    <!-- Col4 -->
+                    <div class="soci_inner_col">
+                      <div class="file">
+                        <label class="file-label">
+                          <input class="file-input" type="file" name="resume">
+                          <span class="file-cta">
+                            <span class="file-icon">
+                              <i class="fas fa-upload"></i>
+                            </span>
+                            <span class="file-label">
+                              Choose Picture
+                            </span>
+                          </span>
+                        </label>
+                      </div>
+                    </div>
+                    <!-- Col4 Ends -->
+                  </div>
+                </div>
+              </section>
+            </li>
+            <!-- List2 -->
+            <li>
+              <section>
+                <article class="message">
+                  <div class="message-header">
+                    <p>Added on Sat 03 Apr, 2020</p>
+                    <button class="delete" aria-label="delete"></button>
+                  </div>
+                  <div class="message-body">
+                    Check if he still needs our services
+                  </div>
+                </article>
+                <article class="message">
+                  <div class="message-header">
+                    <p>Added on Sat 02 Apr, 2020</p>
+                    <button class="delete" aria-label="delete"></button>
+                  </div>
+                  <div class="message-body">
+                    Notes Works Now, Though API Response is not saving yet due to a bug, sort in next version
+                  </div>
+                </article>
+                <div class="soci_add_note_sec">
+                  <textarea class="textarea" placeholder="Add New Note"></textarea>
+                  <div class="field is-grouped padding_add">
+                    <p class="control">
+                      <a class="button is-primary primary_color">
+                        Submit
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </li>
+            <!-- List3 -->
+            <li>
+              <section>
+                <h1>Coming Soon </h1>
+              </section>
+            </li>
+            <!-- List4 -->
+            <li>
+              <section>
+                <div class="timeline">
+                  <header class="timeline-header">
+                    <span class="tag is-medium is-primary">Start</span>
+                  </header>
+                  <div class="timeline-item">
+                    <div class="timeline-marker is-primary"></div>
+                    <div class="timeline-content">
+                      <p class="heading">26 March 2020</p>
+                      <p>Added New Contact</p>
+                    </div>
+                  </div>
+                  <div class="timeline-item">
+                    <div class="timeline-marker is-warning is-image is-32x32">
+                      <img src="https://bulma.io/images/placeholders/32x32.png">
+                    </div>
+                    <div class="timeline-content">
+                      <p class="heading">01 Dec 2020</p>
+                      <p>Added to Funnel :<em> Default </em></p>
+                    </div>
+                  </div>
+                  <header class="timeline-header">
+                    <span class="tag is-primary">2021</span>
+                  </header>
+                  <div class="timeline-item">
+                    <div class="timeline-marker is-danger is-icon">
+                      <i class="fa fa-plus"></i>
+                    </div>
+                    <div class="timeline-content">
+                      <p class="heading">26 March 2021</p>
+                      <p>Status Converted to <em>Customer</em> from <em>Lead</em></p>
+                    </div>
+                  </div>
+                  <header class="timeline-header">
+                    <span class="tag is-primary is-medium">End</span>
+                  </header>
+                </div>
+
+              </section>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Profile Tab Ends -->
+    <div class="card">
+      <footer class="card-footer">
+        <a href="#" class="card-footer-item soci_save_btn_con">Save</a>
+        <a href="#" class="card-footer-item">Delete</a>
+      </footer>
+    </div>
+  </section>
+</body>
+
+</html>

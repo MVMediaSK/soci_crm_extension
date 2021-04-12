@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src * data: https://cdnjs.cloudflare.com/* 'unsafe-inline' 'unsafe-eval';" />
+    <title>SociCRM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="./popup.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="row_soci align-items-center">
+            <div class="col_soci">
+                <div class="facebook_soci">
+                    <center>
+                        <i style="color:#ffffff;" class="fab fa-facebook-square fa-3x"></i><br />
+                        <a style="color:#ffffff; text-decoration:none; font-family:Arial; font-size:15px;"
+                            href="https://facebook.com" class="link_to fb_link">Facebook</a>
+                    </center>
+                </div>
+            </div>
+            <div class="col_soci">
+                <div class="messenger_soci">
+                    <center>
+                        <i style="color:#ffffff;" class="fab fa-facebook-messenger fa-3x"></i><br />
+                        <a style="color:#ffffff; text-decoration:none; font-family:Arial; font-size:15px;"
+                            href="https://messenger.com" class="link_to msngr_link">Messenger</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="logo-img-soci-crm">
+        <center>
+            <img src="./128socicrm.png" />
+        </center>
+    </div>
+    <div class="login_soci_container">
+        <center>
+            <div class="soci_login_err"></div>
+            <label for="email">Email</label><br />
+            <input type="text" id="email" name="email"><br><br>
+            <label for="password">Password</label><br />
+            <input type="password" id="password" name="password"><br><br>
+            <button id="submit_soci">Login</button>
+            <center>
+    </div>
+    </div>
+    <script hash="sha256-BsPIExjScT5nPLhWuUc5j55H5FgIpaHDUDoin7Lnf24$" src="./axios.js"></script>
+    <script hash="sha256-BsPIExjScT5nPLhWuUc5j55H5FgIpaHDUDoin7Lnf241" src="./popup.js"></script>
+</body>
+
+</html>

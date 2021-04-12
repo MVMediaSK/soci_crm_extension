@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SociCRM Messages</title>
+  <link rel="stylesheet" href="chrome-extension://dajhlgeppahilcjfammljcfneapcfckn/bulma/css/bulma.min.css">
+  <link rel="stylesheet"
+    href="chrome-extension://dajhlgeppahilcjfammljcfneapcfckn/libraries/font-awesome/css/fa-all.css" />
+  <link rel="stylesheet"
+    href="chrome-extension://dajhlgeppahilcjfammljcfneapcfckn/bulma-extensions/bulma-tagsinput/dist/css/bulma-tagsinput.min.css" />
+  <link rel="stylesheet" href="chrome-extension://dajhlgeppahilcjfammljcfneapcfckn/dashboard/css/msgCards.css" />
+
+</head>
+
+<body>
+  <div class="soci_msg_section">
+    <!-- New Msg Card-->
+    <div class="soci_msg_cards">
+      <article class="message">
+        <div class="message-header">
+          <h4 class="soci_heading soci_msg_heading">${msg_arr[msg].title}</h4>
+        </div>
+        <div class="message-body soci_msg_full">
+          ${msg_arr[msg].createdAt} & ${msg_arr[msg].cat_id}
+        </div>
+      </article>
+    </div>
+    <!-- New Msg Card Ends -->
+
+    <!-- Messages -->
+    <!-- <div class="soci_card soci_msg_cards">
+        <h4 class="soci_heading">${msg_arr[msg].title}</h4>
+        <p>${msg_arr[msg].createdAt} & ${msg_arr[msg].cat_id}</p>
+      </div> -->
+    <!-- Messages End -->
+  </div>
+</body>
+
+</html>

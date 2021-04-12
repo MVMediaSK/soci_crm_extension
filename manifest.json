@@ -1,0 +1,80 @@
+{
+    "name": "SociCRM New",
+    "description": "Extension to manage your contacts better on social media",
+    "version": "0.1.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "matches": [
+                "http://facebook.com/*",
+                "https://facebook.com/*",
+                "https://*.facebook.com/*"
+            ],
+            "js": [
+                "axios.js",
+                "bulma-extensions/bulma-tagsinput/dist/js/bulma-tagsinput.js",
+                "bulma-extensions/bulma-calendar/dist/js/bulma-calendar.js",
+                "iziToast.js",
+                "libraries/umbrellajs/umbrellajs.js",
+                "bulma/dist/bulma.js",
+                "content.js"
+            ],
+            "css": [
+                "./floating_btn/floating_btn.css"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "16": "./16socicrm.png",
+        "32": "./32socicrm.png",
+        "48": "./48socicrm.png",
+        "128": "./128socicrm.png"
+    },
+    "background": {
+        "scripts": [
+            "./background.js"
+        ]
+    },
+    "options_page": "./options.html",
+    "browser_action": {
+        "default_name": "SociCRM - Manage Social Media Contacts Like a PRO",
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "./16socicrm.png",
+            "32": "./32socicrm.png",
+            "48": "./48socicrm.png",
+            "128": "./128socicrm.png"
+        }
+    },
+    "permissions": [
+        "tabs",
+        "webNavigation",
+        "storage",
+        "contextMenus",
+        "downloads",
+        "*://*/*"
+    ],
+    "web_accessible_resources": [
+        "floating_btn/*",
+        "128socicrm.png",
+        "axios.js",
+        "bootstrap.js",
+        "dashboard/*",
+        "dashboard/js/*",
+        "dashboard/css/*",
+        "dashboard/images/*",
+        "dashboard/components/*",
+        "libraries/*",
+        "libraries/iziToast/*",
+        "libraries/iziToast/css/*",
+        "libraries/iziToast/js/*",
+        "https://via.placeholder.com/*",
+        "https://cdn.jsdelivr.net/*",
+        "https://cdnjs.cloudflare.com/*",
+        "https://bulma.io/*",
+        "bulma/*",
+        "bulma-extensions/*",
+        "https://graph.facebook.com/*"
+    ]
+}

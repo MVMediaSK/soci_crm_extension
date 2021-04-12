@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  height: 300px;
+}
+
+.container {
+  margin: 5px;
+  border-radius: 25px;
+  padding: 20px;
+  background-color: #9f50dd;
+}
+
+.row_soci {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.col_soci {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.link_to:hover {
+  cursor: pointer;
+}
+
+i:hover {
+  cursor: pointer;
+}
+.login_soci_container div {
+  margin: 0 auto;
+}
+
+.login_soci_container label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+.login_soci_container input {
+  width: 80%;
+  text-align: center;
+  padding: 10px;
+  border: 2px solid #9f50dd;
+  border-radius: 50px;
+}
+
+.login_soci_container input:focus {
+  border: 2px solid #9f50dd;
+  border-radius: 50px;
+}
+
+.login_soci_container button {
+  border: 2px solid #9f50dd;
+  border-radius: 50px;
+  padding: 10px 5px;
+  width: 85%;
+  background-color: #9f50dd;
+  margin: 10px;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.login_soci_container button:hover {
+  cursor: pointer;
+  color: #9f50dd;
+  background-color: #fff;
+}
+
+.soci_login_err {
+  color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  display: hidden;
+}

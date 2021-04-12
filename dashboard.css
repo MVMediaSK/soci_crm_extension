@@ -1,0 +1,17 @@
+body,
+.dash-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+/* 20% */
+.side-panel {
+  height: 100%;
+  width: 20%;
+}
+
+/* 80% */
+.right-panel {
+  height: 100%;
+  width: 80%;
+}

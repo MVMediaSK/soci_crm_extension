@@ -1,0 +1,9 @@
+.soci_msg_body {
+  max-width: 200px !important;
+  max-height: 200px;
+  overflow-y: scroll !important;
+}
+
+.soci_msg_body a {
+  font-size: 11px;
+}

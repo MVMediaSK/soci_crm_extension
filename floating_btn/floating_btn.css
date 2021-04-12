@@ -1,0 +1,32 @@
+.float {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  bottom: 40px;
+  left: 40px;
+  background-color: #ffffff;
+  color: #fff;
+  border-radius: 25px;
+  border: 0.5px solid #6638f0;
+  text-align: center;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 1;
+}
+
+.my-float {
+  margin-top: 22px;
+}
+
+.soci-icon-btn {
+  width: 75px;
+  text-align: center;
+  padding-top: 5px;
+  -webkit-transition: -webkit-transform 0.8s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+}
+
+.soci-icon-btn:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  cursor: pointer;
+}

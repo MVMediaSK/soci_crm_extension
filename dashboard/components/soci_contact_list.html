@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile Card</title>
+  <link rel="stylesheet" href="chrome-extension://dajhlgeppahilcjfammljcfneapcfckn/bulma/css/bulma.min.css">
+  <link rel="stylesheet"
+    href="chrome-extension://dajhlgeppahilcjfammljcfneapcfckn/libraries/font-awesome/css/fa-all.css" />
+  <link rel="stylesheet"
+    href="chrome-extension://dajhlgeppahilcjfammljcfneapcfckn/bulma-extensions/bulma-tagsinput/dist/css/bulma-tagsinput.min.css" />
+  <link rel="stylesheet"
+    href="chrome-extension://dajhlgeppahilcjfammljcfneapcfckn/dashboard/css/soci_contact_list.css" />
+</head>
+
+<body>
+  <section class="section soci_crm_contact_card {{contact_card_id}}">
+    <div class="container">
+      <!-- card component -->
+      <div class="card">
+        <!-- Card Header -->
+        <header class="card-header">
+          <!-- Profile Image Thumb -->
+          <div class="">
+            <figure class="image is-48x48">
+              <img class="soci_profile_img" src="https://bulma.io/images/placeholders/24x24.png" alt="User_Profile_Pic">
+            </figure>
+            <!-- Profile Image Thumb -->
+          </div>
+
+          <p class="card-header-title soci_card-header-title">
+            {{Contact_Name_Comes_here}}
+          </p>
+          <!-- Contact Card Dropdown Options -->
+          <div class="dropdown soci_contact_card_drop_down_menu">
+            <div class="dropdown-trigger soci_drop_trigger">
+              <button class="button is-info" aria-haspopup="true" aria-controls="dropdown-menu2">
+                <!-- <span></span> -->
+                <span class="icon is-small">
+                  <i class="fa fa-cog" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <p>You can insert <strong>any type of content</strong> within the dropdown menu.</p>
+                </div>
+                <hr class="dropdown-divider">
+                <div class="dropdown-item">
+                  <p>You simply need to use a <code>&lt;div&gt;</code> instead.</p>
+                </div>
+                <hr class="dropdown-divider">
+                <a href="#" class="dropdown-item">
+                  This is a link
+                </a>
+              </div>
+            </div>
+          </div>
+          <button class="card-header-icon soci_expand_card_btn soci_expand_card {{contact_id}}_to_expand"
+            aria-label="more options">
+            <span class="icon soci_icon_cn {{contact_id}}_to_expand">
+              <i class="fas fa-angle-down soci_expand_card_icon soci_expand_card {{contact_id}}_to_expand"
+                aria-hidden="true"></i>
+            </span>
+          </button>
+        </header>
+        <!-- Card Content -->
+        <div class="card-content soci_crm_card_content {{contact_id}}_card_content {{active_card}}">
+          <div class="media">
+            <div class="media-left">
+              <figure class="image is-64x64">
+                <img class="soci_profile_img" src="https://bulma.io/images/placeholders/96x96.png"
+                  alt="User_Profile_Pic">
+              </figure>
+            </div>
+            <div class="media-content">
+              <p class="title soci_title_name is-5">{{User_Full_Name}}</p>
+              <p class="subtitle soci_username is-6"></p>
+            </div>
+          </div>
+
+          <div class="content">
+            <!-- Column 1 -->
+            <div class="columns">
+              <div class="column">
+                <div class="row">
+                  <span class="is_bold">Status</span><br />
+                  <span class="tag is-rounded is-primary {{contact_id}}_soci_crm_tag">
+                    Contact Added</span>
+
+                </div>
+              </div>
+              <div class="column">
+                <div class="row">
+                  <span>Connect</span><br />
+                  <a href="{{zoom_link}}" class="soci_card_btn soci_card_btn_zoom button is-link is-rounded"><i
+                      class="fas fa-video"></i>
+                    &nbsp; Zoom
+                  </a>
+                  <a href="{{email_link}}" class="soci_card_btn soci_card_btn_email button is- is-rounded"><i
+                      class="fas fa-envelope-open"></i> &nbsp;
+                    Email </a>
+                </div>
+              </div>
+              <div class="column">
+                <div class="row">
+                  <span>Tags</span><br />
+                  <input class="input soci_input_tag" type="tags" placeholder="Add Tag" value="Tag1,Tag2,Tag3">
+                </div>
+              </div>
+              <div class="column">
+                <div class="row">
+                  <span>Date</span><br />
+                  <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                  <!-- <a href="{{zoom_link}}" class="soci_card_btn soci_card_btn_zoom button is-link is-rounded"><i
+                      class="fas fa-video"></i>
+                    &nbsp; Zoom
+                  </a>
+                  <a href="{{email_link}}" class="soci_card_btn soci_card_btn_email button is- is-rounded"><i
+                      class="fas fa-envelope-open"></i> &nbsp;
+                    Email </a> -->
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <!-- Card Footer -->
+        <div class="card">
+          <footer class="card-footer">
+            <a href="#" class="card-footer-item soci_crm_foot_link soci_edit soci_edit_btn {{contact_id_here}}"><i
+                class="fas fa-edit">
+              </i></a>
+            <a href="#" class="card-footer-item soci_crm_foot_link soci_delete {{contact_id_here}}"><i
+                class="fas fa-trash"></i></a>
+          </footer>
+        </div>
+      </div>
+      <!-- card component ends -->
+    </div>
+  </section>
+  <!-- All of BulmaJS -->
+
+</body>
+
+</html>

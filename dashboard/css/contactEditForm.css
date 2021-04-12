@@ -1,0 +1,96 @@
+/* New */
+.main_docs_con,
+.main_docs_con body,
+.main_docs_con body section {
+  height: 100%;
+}
+
+.soci_contact_section {
+  height: 100%;
+}
+
+.soci_contact_section .padding_add {
+  padding: 10px;
+}
+
+.soci_contact_section .message-header {
+  background-color: #9f50dd;
+}
+
+.soci_contact_section .primary_color {
+  background-color: #9f50dd;
+}
+
+.main_docs_con body section {
+  padding: 10px 2px;
+}
+
+.main_docs_con body section .card {
+  position: fixed !important;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.soci_contact_section .tabs-content li {
+  display: none;
+  list-style: none;
+}
+
+.soci_contact_section .tabs-content li.is-active {
+  display: block;
+}
+
+.soci_contact_section .tabs li.is-active a {
+  border-bottom-color: #9f50dd;
+  color: #ffffff;
+  background-color: #9f50dd;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.soci_contact_section .tabs li a:hover,
+.soci_contact_section .tabs li a:focus {
+  border-bottom-color: #9f50dd;
+  color: #ffffff;
+  background-color: #9f50dd;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.soci_contact_section .soci_profile_img {
+  border-radius: 25px;
+}
+
+.soci_contact_section .soci_card-header-title {
+  color: #9f50dd;
+}
+
+.soci_contact_section figure {
+  margin: 0 auto;
+}
+
+.soci_contact_section .soci_label_col {
+  text-align: center;
+}
+
+.soci_contact_section .soci_inner_label_col p,
+.soci_contact_section .soci_inner_col {
+  padding: 10px;
+}
+
+.soci_contact_section .soci_inner_label_col p {
+  padding: 15px;
+}
+
+.soci_contact_section .timeline .tag,
+.timeline-marker {
+  background-color: #9f50dd;
+}
+
+.card-footer a {
+  color: #9f50dd;
+}
+
+.card-footer a:hover {
+  text-decoration: underline;
+}

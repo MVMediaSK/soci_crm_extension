@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy"
+        content="script-src * data: https://cdnjs.cloudflare.com/* 'unsafe-inline' 'unsafe-eval';" />
+    <title>Login Menu Popup - SociCRM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 500px;
+            height: 250px;
+        }
+
+        .container {
+            border-radius: 0px;
+            padding: 20px;
+            background-color: #9f50dd;
+        }
+
+        .row_soci {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .col_soci {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+        }
+
+        .link_to:hover {
+            cursor: pointer;
+        }
+
+        i:hover {
+            cursor: pointer;
+        }
+
+        .wlcm_soci h3 {
+            text-align: center;
+            font-size: 22px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #9f50dd;
+        }
+
+        .soci_notice {
+            width: 100%;
+            background-color: green;
+        }
+
+        .soci_notice p {
+            text-align: center;
+            font-size: 18px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #ffffff;
+            padding: 20px;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="logo-img-soci-crm">
+        <center>
+            <img src="./128socicrm.png" />
+        </center>
+    </div>
+    <div class="soci_greetings">
+        <div class="wlcm_soci">
+            <h3>Welcome, <span class="fname_soci">.....</span></h3>
+        </div>
+    </div>
+    <div class="soci_notice">
+        <p class="soci_msg">
+            <span>
+                <i style="color:#ffffff;" class="fas fa-check fa-2x"></i><br /><br />
+                Auto Login Successful
+            </span>
+        </p>
+    </div>
+    <div class="container">
+        <div class="row_soci align-items-center">
+            <div class="col_soci">
+                <div class="dash-link">
+                    <center>
+                        <i style="color:#ffffff;" class="fas fa-tachometer-alt fa-3x"></i><br /><br />
+                        <a style="color:#ffffff; text-decoration:none; font-family:Arial; font-size:15px;"
+                            href="https://facebook.com" class="link_to">Access Dashboard</a>
+                    </center>
+                </div>
+            </div>
+            <div class="col_soci">
+                <div class="logout-link">
+                    <center>
+                        <i style="color:#ffffff;" class="fas fa-sign-out-alt fa-3x"></i><br /><br />
+                        <a style="color:#ffffff; text-decoration:none; font-family:Arial; font-size:15px;"
+                            href="https://messenger.com" class="link_to">Logout</a>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script hash="sha256-BsPIExjScT5nPLhWuUc5j55H5FgIpaHDUDoin7Lnf24$" src="./axios.js"></script>
+    <script hash="sha256-BsPIExjScT5nPLhWuUc5j55H5FgIpaHDUDoin7Lnf241" src="./options-script.js"></script>
+</body>
+
+</html>
